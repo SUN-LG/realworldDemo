@@ -4,7 +4,7 @@ export default {
     host: '0.0.0.0',
   },
   router: {
-    base: '/lagou-work',
+    base: '/',
     linkActiveClass: 'active',
     extendRoutes(routes, resolve) {
       // 清除根据 pages 目录默认生成的路由表规则
@@ -17,7 +17,7 @@ export default {
           children: [
             {
               path: '',
-              name: 'home',
+              name: '/home',
               component:resolve(__dirname, 'pages/home')
             },
             {
